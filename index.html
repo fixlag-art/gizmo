@@ -3,37 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Gizmo | FIXLAG.ART</title>
-  <link rel="stylesheet" href="https://fixlag.art/assets/common.css">
+  <title>Gizmo — Top | FIXLAG.ART</title>
+  <link rel="stylesheet" href="/assets/common.css">
+  <style>
+    .lead{color:var(--muted)}
+    .notice{background:#fff;border:1px solid var(--border);border-radius:.8rem;padding:1rem}
+    .notice h3{margin:.2rem 0 .4rem;font-size:1.05rem}
+  </style>
 </head>
 <body>
 <div class="layout">
   <nav class="sidenav" aria-label="Global">
     <div class="logo">FIXLAG.ART</div>
-    <a href="https://fixlag.art/">Index</a>
-    <a href="https://fixlag.art/sonic/">Sonic</a>
-    <a href="https://fixlag.art/relic/">Relic</a>
-    <a href="https://fixlag.art/velox/">Velox</a>
-    <a href="https://fixlag.art/gizmo/">Gizmo</a>
-    <a href="https://fixlag.art/about/">About</a>
+    <a href="/">Nexus</a>
+    <a href="/sonic/">Sonic</a>
+    <a href="/relic/">Relic</a>
+    <a href="/velox/">Velox</a>
+    <a href="/gizmo/" class="active">Gizmo</a>
     <div class="sep"></div>
   </nav>
 
   <main class="content">
-    <nav class="subnav" aria-label="Gizmo sections">
-      <!-- 例: <a href="/gizmo/iphone/" class="chip">iPhone</a> -->
-      <!-- 例: <a href="/gizmo/mac/" class="chip">Mac</a> -->
-      <!-- 例: <a href="/gizmo/10g/" class="chip">10G Network</a> -->
-    </nav>
+    <nav class="subnav" aria-label="Gizmo sections" data-base="/gizmo/"></nav>
+    <script id="subnav-data" type="application/json">
+    [["Top","/gizmo/"]]
+    </script>
+    <script src="/assets/subnav.js" defer></script>
+    <script src="/assets/common.js" defer></script>
 
     <article class="page">
       <h1>Gizmo</h1>
-      <div class="card">
-        <p>デバイス／ネットワーク所感の入口。話題別にチップを配置してください。</p>
-      </div>
+      <p class="lead">ギズモ</p>
+
+      <section class="notice" role="status" aria-live="polite" style="margin-top:12px">
+        <h3>In preparation</h3>
+        <p>Device notes and usage impressions will be presented with a calm, clear tone.</p>
+        <p class="lead">デバイス記録と使用感のノートを準備しています。公開までしばらくお待ちください。</p>
+      </section>
     </article>
   </main>
 </div>
-<script src="https://fixlag.art/assets/common.js"></script>
 </body>
 </html>
